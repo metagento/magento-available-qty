@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <metagento translate="label">
+            <label>Metagento Modules</label>
+            <sort_order>7777777</sort_order>
+        </metagento>
+    </tabs>
+    <sections>
+        <availableqty translate="label" module="availableqty">
+            <class>separator-top</class>
+            <label>Available Qty Configuration</label>
+            <tab>metagento</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Configuration</label>
+                    <comment><![CDATA[<p><strong>If you need help with any function of Magento, we provide Custom Development Service, please visit our website to review our service: <a href="https://www.metagento.com">https://www.metagento.com</a></strong></p>]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enable module</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </enabled>
+                        <auto_add translate="label comment">
+                            <label>Auto add available qty to cart</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If the qty customer requests is not available</comment>
+                        </auto_add>
+                    </fields>
+                </general>
+            </groups>
+        </availableqty>
+    </sections>
+</config>
